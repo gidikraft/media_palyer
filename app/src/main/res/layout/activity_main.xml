@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--  media control container  -->
     <LinearLayout
         android:id="@+id/media_wrapper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
-        
+<!--  album artwork  -->
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:src="@drawable/mark_on_the_street"
+            android:src="@drawable/cd_album_cover"
             android:layout_marginBottom="40dp"/>
-
+<!--  seekbar to control progress of playing song  -->
         <SeekBar
             android:id="@+id/seekbar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp" />
-
+<!--  container for media controls  -->
         <LinearLayout
             android:id="@+id/media_control_wrapper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
+<!--  play song button  -->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,7 +37,7 @@
                 android:clickable="true"
                 android:layout_margin="20dp"
                 android:src="@drawable/ic_play"/>
-
+<!--  pause song button  -->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +45,7 @@
                 android:clickable="true"
                 android:layout_margin="20dp"
                 android:src="@drawable/ic_pause"/>
-
+<!--  stop song button  -->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,8 +55,5 @@
                 android:src="@drawable/ic_stop"/>
 
         </LinearLayout>
-
     </LinearLayout>
-
-
 </RelativeLayout>
