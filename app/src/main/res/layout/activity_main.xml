@@ -35,6 +35,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/play_fab"
                 android:clickable="true"
+                android:focusable="true"
                 android:layout_margin="20dp"
                 android:src="@drawable/ic_play"/>
 <!--  pause song button  -->
@@ -43,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pause_fab"
                 android:clickable="true"
+                android:focusable="true"
                 android:layout_margin="20dp"
                 android:src="@drawable/ic_pause"/>
 <!--  stop song button  -->
@@ -51,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/stop_fab"
                 android:clickable="true"
+                android:focusable="true"
                 android:layout_margin="20dp"
                 android:src="@drawable/ic_stop"/>
 
